@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pear-Android</string>
+
+    <!-- Splash Activity -->
+    <string name="splash_screen_placeholder">Splash Screen Placeholder</string>
+
+    <!-- Welcome Activity -->
+    <string name="welcome_activity_main_text">Welcome to the best\npearing app around!</string>
+    <string name="welcome_activity_login">LogIn</string>
+    <string name="welcome_activity_register">Register</string>
+    <string name="welcome_activity_content_description_pear_logo">LogIn</string>
+    <string name="welcome_activity_content_description_separator">LogIn</string>
+
+    <!-- Registration Activity -->
+    <string name="registration_activity_header">Register</string>
+    <string name="registration_activity_next_button">Next</string>
+    <string name="registration_activity_email_placeholder">E-mail Address</string>
+    <string name="registration_activity_username_placeholder">Username</string>
+    <string name="registration_activity_password_placeholder">Password</string>
+    <string name="registration_activity_referral_placeholder">Referral ID (Optional)</string>
+    <string name="registration_activity_first_name_placeholder">First Name</string>
+    <string name="registration_activity_last_name_placeholder">Last Name</string>
+</resources>
+
+

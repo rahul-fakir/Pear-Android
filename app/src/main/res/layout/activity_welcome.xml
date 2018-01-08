@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pear.rahulfakir.pear_android.WelcomeActivity">
+
+    <Button
+        android:id="@+id/btnWelcomeActivity_Register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/pear_primary_button"
+        android:text="@string/welcome_activity_register"
+        android:textColor="@drawable/pear_primary_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnWelcomeActivity_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/pear_primary_button"
+        android:text="@string/welcome_activity_login"
+        android:textColor="@drawable/pear_primary_button_text"
+        app:layout_constraintBottom_toTopOf="@+id/btnWelcomeActivity_Register"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgWelcomeActivity_Pear_Logo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:contentDescription="@string/welcome_activity_content_description_pear_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pear_logo" />
+
+    <TextView
+        android:id="@+id/txtWelcomeActivity_Welcome_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gotham_rnd_medium"
+        android:text="@string/welcome_activity_main_text"
+        android:textColor="@color/textSecondary"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgWelcomeActivity_Separator"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgWelcomeActivity_Pear_Logo"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <ImageView
+        android:id="@+id/imgWelcomeActivity_Separator"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="96dp"
+        android:contentDescription="@string/welcome_activity_content_description_separator"
+        app:layout_constraintBottom_toTopOf="@+id/btnWelcomeActivity_Login"
+        app:layout_constraintEnd_toEndOf="@+id/txtWelcomeActivity_Welcome_Text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcomeActivity_Welcome_Text"
+        app:srcCompat="@drawable/pear_separator" />
+</android.support.constraint.ConstraintLayout>
