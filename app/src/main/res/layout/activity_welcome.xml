@@ -7,7 +7,7 @@
     tools:context="com.pear.rahulfakir.pear_android.WelcomeActivity">
 
     <Button
-        android:id="@+id/btnWelcomeActivity_Register"
+        android:id="@+id/WelcomeActivity_btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="96dp"
@@ -22,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/btnWelcomeActivity_Login"
+        android:id="@+id/WelcomeActivity_btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -31,13 +31,13 @@
         android:background="@drawable/pear_primary_button"
         android:text="@string/welcome_activity_login"
         android:textColor="@drawable/pear_primary_button_text"
-        app:layout_constraintBottom_toTopOf="@+id/btnWelcomeActivity_Register"
+        app:layout_constraintBottom_toTopOf="@+id/WelcomeActivity_btnRegister"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
-        android:id="@+id/imgWelcomeActivity_Pear_Logo"
+        android:id="@+id/WelcomeActivity_imgPearLogo"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -48,7 +48,7 @@
         app:srcCompat="@drawable/pear_logo" />
 
     <TextView
-        android:id="@+id/txtWelcomeActivity_Welcome_Text"
+        android:id="@+id/WelcomeActivity_txtWelcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -56,24 +56,24 @@
         android:text="@string/welcome_activity_main_text"
         android:textColor="@color/textSecondary"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/imgWelcomeActivity_Separator"
+        app:layout_constraintBottom_toTopOf="@+id/WelcomeActivity_imgSeparator"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgWelcomeActivity_Pear_Logo"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeActivity_imgPearLogo"
         app:layout_constraintVertical_bias="0.972" />
 
     <ImageView
-        android:id="@+id/imgWelcomeActivity_Separator"
+        android:id="@+id/WelcomeActivity_imgSeparator"
         android:layout_width="0dp"
         android:layout_height="5dp"
         android:layout_marginBottom="96dp"
         android:contentDescription="@string/welcome_activity_content_description_separator"
-        app:layout_constraintBottom_toTopOf="@+id/btnWelcomeActivity_Login"
-        app:layout_constraintEnd_toEndOf="@+id/txtWelcomeActivity_Welcome_Text"
+        app:layout_constraintBottom_toTopOf="@+id/WelcomeActivity_btnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/WelcomeActivity_txtWelcomeText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/txtWelcomeActivity_Welcome_Text"
+        app:layout_constraintStart_toStartOf="@+id/WelcomeActivity_txtWelcomeText"
         app:srcCompat="@drawable/pear_separator" />
 </android.support.constraint.ConstraintLayout>

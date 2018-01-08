@@ -7,13 +7,13 @@
     tools:context="com.pear.rahulfakir.pear_android.RegistrationActivity">
 
     <Button
-        android:id="@+id/btnLoginActivity_Register"
+        android:id="@+id/RegistrationActivity_Register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/pear_primary_button"
         android:text="@string/registration_activity_next_button"
         android:textColor="@drawable/pear_primary_button_text"
@@ -21,8 +21,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationActivity_edtReferralId" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -38,7 +37,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/gotham_rnd_medium"
         android:text="@string/registration_activity_header"
         android:textColor="@color/textPrimary"
@@ -48,12 +47,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/RegistrationActivity_edtEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorPrimary"
         android:ems="10"
         android:hint="@string/registration_activity_email_placeholder"
@@ -64,10 +63,30 @@
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationActivity_edtLastName" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/RegistrationActivity_edtUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="@string/registration_activity_username_placeholder"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/textSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationActivity_edtEmail" />
+
+    <EditText
+        android:id="@+id/RegistrationActivity_edtReferralId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -84,10 +103,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationActivity_edtPassword" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/RegistrationActivity_edtLastName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
@@ -101,15 +120,15 @@
         android:textColorHint="@color/textSecondary"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationActivity_edtFirstName" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/RegistrationActivity_edtFirstName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/colorPrimary"
         android:ems="10"
         android:hint="@string/registration_activity_first_name_placeholder"
@@ -121,7 +140,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/RegistrationActivity_edtPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -134,7 +153,10 @@
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/textSecondary"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationActivity_edtUsername" />
 
 </android.support.constraint.ConstraintLayout>

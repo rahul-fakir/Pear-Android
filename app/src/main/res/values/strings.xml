@@ -20,6 +20,12 @@
     <string name="registration_activity_referral_placeholder">Referral ID (Optional)</string>
     <string name="registration_activity_first_name_placeholder">First Name</string>
     <string name="registration_activity_last_name_placeholder">Last Name</string>
+
+    <!-- Login Activity -->
+    <string name="login_activity_header">Log In</string>
+    <string name="login_activity_next_button">Sign In</string>
+    <string name="login_activity_email_placeholder">E-mail Address</string>
+    <string name="login_activity_password_placeholder">Password</string>
 </resources>
 
 
